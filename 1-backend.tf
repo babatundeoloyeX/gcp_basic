@@ -3,6 +3,7 @@ terraform {
   backend "gcs" {
     bucket = "backendformytf"
     prefix = "terraform/state"
+    credentials = "thailand"
   }
   required_providers {
     google = {
